@@ -1,0 +1,30 @@
+Si tu tienes un arreglo que quieres voltear de atras para delante.
+Y lo implementas algo asi:
+
+int array_len = len(array)
+
+if(array_len % 2 == 0){
+// olvidate de esto
+}
+
+else{
+ int container1 = 0;
+ int container2 = 0;
+ int middle_element = array[array_len % 2]
+ for(int i = array_len; i < 0; i++) {
+  if(array[i] == middle_element) {
+ break
+   }
+else { 
+ container1 = a[i - 1]
+ container2 = a[array_len - i]
+ a[array_len - i] = container1
+ a[i- 1] = container2
+}
+}
+
+
+
+}
+
+En que tiempo corre el programa ?
